@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+        <button id="addProductBtn">Add Product</button>
+        <div id="productContainer" class="product-container"></div>
+    </div>
+
+    <div id="productFormPopup" class="popup">
+        <form id="productForm" class="popup-content">
+            <h2 id="formTitle">Add Product</h2>
+            <label for="productName">Name:</label>
+            <input type="text" id="productName" name="name" required>
+            <label for="productImage">Image URL:</label>
+            <input type="text" id="productImage" name="image" required>
+            <label for="productDescription">Description:</label>
+            <textarea id="productDescription" name="description" required></textarea>
+            <button type="submit">Submit</button>
+            <button type="button" id="closePopupBtn">Close</button>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
